@@ -44,7 +44,7 @@ def save_images(webpage, visuals, image_path, aspect_ratio=1.0, width=256, use_w
             txts.append(label)
             links.append(image_name)
         else:
-            save_path = os.path.join(result_dir, f"{name}.{ext}")
+            save_path = os.path.join(result_dir, f"{name}{ext}")
         util.save_image(im, save_path, aspect_ratio=aspect_ratio)
 
     if webpage is not None:
